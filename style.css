@@ -20,6 +20,8 @@ body {
     }
 }
 
+
+
 .btn-design {
    
     outline: 0;
@@ -30,7 +32,7 @@ body {
     cursor: pointer;
     display: inline-flex;
     flex-shrink: 0;
-    font-size: 2em;
+    font-size: 1em;
     gap: 1em;
     justify-content: center;
     line-height: 1.5;
@@ -87,3 +89,10 @@ body {
 box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 background-color: rgba(249, 245, 251, 0.88);
 }
+
+
+  #my_camera {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }

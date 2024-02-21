@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybB5IXNxFwWQfE7u8Lj+XJHAxKlXiG/8rsrtpb6PEdzD828Ii" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <style>
 .hidden {
@@ -57,8 +59,8 @@ if($isMob){ ?>
 
                             <div class="card-body text-center">
                                 <h1 class="mt-5">Capture</h1>
-                            
-                                <div id="my_camera"></div>
+                                
+                                <div id="my_camera" class="text-center"></div>
                                 <br>
                                 <input type="button" class="btn-design" value="Take Snapshot" onclick="take_Snapshot()">
                         
@@ -93,12 +95,12 @@ if($isMob){ ?>
         </div>
     </div>
 
+
     <script>
     Webcam.set({
-        // live preview size
         width: 640,
         height: 480,
-
+        
         // device capture size
         dest_width: 640,
         dest_height: 480,
@@ -107,12 +109,14 @@ if($isMob){ ?>
 		crop_width: 480,
 		crop_height: 480,
 
-        image_format: 'jpeg',
+        image_format: 'jpg',
         jpeg_quality: 90,
         force_flash: false,
         flip_horiz: true,
         fps: 24
-    });
+
+        });
+
 
     Webcam.attach("#my_camera");
 

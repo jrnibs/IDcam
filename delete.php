@@ -22,7 +22,7 @@ if(isset($_GET['del'])){
         if (mysqli_query($conn, $sql2)) {
     
             echo "<script>alert('Image has been deleted');
-            window.location.href ='index.php';</script>";
+            window.location.href ='list.php';</script>";
 
     
         } else {
