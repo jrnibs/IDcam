@@ -18,7 +18,7 @@ if(isset($_POST['w_upload'])){
     
     $image_base64 = base64_decode($image_parts[1]);
     
-    $filename = $name . '.jpeg';
+    $filename = $name . '.jpg';
     
     $file = $folderPath . $filename;
     
